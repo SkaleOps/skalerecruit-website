@@ -499,13 +499,13 @@ footer{background:var(--navy3);border-top:1px solid var(--border);padding:44px 5
       <p class="ft-tag">AI-powered recruitment for growing Indian businesses. Job listing to offer letter, all in one place.</p>
     </div>
     <div class="fl"><h4>Product</h4><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#early-access">Early access</a></div>
-    <div class="fl"><h4>Company</h4><a href="mailto:contact@skalerecruit.com">Contact us</a><a href="https://linkedin.com/company/skaleops" target="_blank">LinkedIn</a><a href="#">Privacy policy</a></div>
+    <div class="fl"><h4>Company</h4><a href="mailto:contact@skalerecruit.com">Contact us</a><a href="https://linkedin.com/company/skaleops-tech" target="_blank">LinkedIn</a><a href="#">Privacy policy</a></div>
     <div class="fl"><h4>Get started</h4><a href="#early-access">Request access</a><a href="mailto:contact@skalerecruit.com">contact@skalerecruit.com</a></div>
   </div>
   <div class="ft-bot">
     <p class="ft-copy">&copy; 2026 SkaleOps Technologies Pvt Ltd. All rights reserved.</p>
     <div class="ft-soc">
-      <a href="https://linkedin.com/company/skaleops" target="_blank" title="LinkedIn">in</a>
+      <a href="https://linkedin.com/company/skaleops-tech" target="_blank" title="LinkedIn">in</a>
       <a href="mailto:contact@skalerecruit.com" title="Email">&#9993;</a>
     </div>
   </div>
@@ -544,7 +544,7 @@ async function submitForm(){
     fd.append('role',role);fd.append('size',size);fd.append('message',msg);
     fd.append('timestamp',new Date().toISOString());
     await fetch(SHEET_URL,{method:'POST',body:fd,mode:'no-cors'});
-    document.getElementById('form-box').innerHTML=`<div class="form-success"><div class="fs-icon">&#127881;</div><h3>You're on the list, ${name.split(' ')[0]}!</h3><p>We'll reach out to <strong style="color:#a8c4e8">${email}</strong> within 48 hours.<br><br>Follow us on <a href="https://linkedin.com/company/skaleops" target="_blank" style="color:#7b9fd4;font-weight:600;">LinkedIn</a> for updates.</p></div>`;
+    document.getElementById('form-box').innerHTML=`<div class="form-success"><div class="fs-icon">&#127881;</div><h3>You're on the list, ${name.split(' ')[0]}!</h3><p>We'll reach out to <strong style="color:#a8c4e8">${email}</strong> within 48 hours.<br><br>Follow us on <a href="https://linkedin.com/company/skaleops-tech" target="_blank" style="color:#7b9fd4;font-weight:600;">LinkedIn</a> for updates.</p></div>`;
   }catch(e){
     errEl.textContent='Something went wrong. Please email contact@skalerecruit.com directly.';
     errEl.style.display='block';btn.disabled=false;btn.textContent='Request early access →';
